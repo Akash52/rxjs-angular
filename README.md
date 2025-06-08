@@ -179,4 +179,11 @@ Note :
     });
     ```
 
+ //Core RxJs Concepts - Errors, Completion and Subscriptions :
+    // 1. Errors: If an error occurs in the observable stream, it will stop emitting values and call the error handler.
+    // 2. Completion: When the observable completes, it will call the complete handler and stop emitting values.
+    // 3. Subscriptions: Subscriptions are used to listen to the observable stream and receive values, errors, and completion notifications.
+    // 4. Unsubscribing: Unsubscribing from an observable stops the subscription and prevents further emissions.
+    // 5. Operators: RxJS provides a wide range of operators to transform, filter, and combine observable streams.
+    
 
