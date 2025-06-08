@@ -163,3 +163,20 @@ Note :
     // RxJS is a powerful library that provides a wide range of operators for transforming, filtering, and combining streams of data.
     // It is widely used in Angular applications to handle asynchronous operations, such as HTTP requests, user inputs, and real-time data updates.
 
+    //what is an RXJS Observable?
+    //An Observable is a stream of data that can be observed over time. It allows you to work with asynchronous data streams, such as user inputs, HTTP requests, or any other event-driven data source. Observables can emit multiple values over time and can be subscribed to in order to react to those emitted values. They are a core part of the ReactiveX library and are widely used in Angular applications for handling asynchronous operations and events.
+    //example:
+    ```
+    const observable$ = new Observable(subscriber => {
+      subscriber.next('Hello');
+      subscriber.next('World');
+      subscriber.complete();
+    });
+    observable$.subscribe({
+      next: value => console.log(value),
+      error: err => console.error('Error:', err),
+      complete: () => console.log('Completed')
+    });
+    ```
+
+
