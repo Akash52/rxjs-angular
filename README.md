@@ -185,5 +185,22 @@ Note :
     // 3. Subscriptions: Subscriptions are used to listen to the observable stream and receive values, errors, and completion notifications.
     // 4. Unsubscribing: Unsubscribing from an observable stops the subscription and prevents further emissions.
     // 5. Operators: RxJS provides a wide range of operators to transform, filter, and combine observable streams.
+
+
+     //How Observables Work Under the Hood, Build Your Own HTTP Observable ?
+    //provide theory and code example
+    //Observables are lazy, they do not execute until subscribed to.
+    //When you create an Observable, it does not start emitting values until you subscribe to it.
+    //This is different from Promises, which execute immediately upon creation.
+    //When you subscribe to an Observable, it starts executing the code inside the Observable and begins emitting values.
+
+    //example :
+    ```
+     http$.subscribe({
+      next: (data) => console.log("Data received: ", data),
+      error: (err) => console.error("Error fetching data: ", err),
+      complete: () => console.log("Data fetch completed")
+    });
+    ```
     
 
