@@ -155,3 +155,11 @@ Note :
     // They allow developers to work with asynchronous data flows, such as user inputs, HTTP requests, or any other event-driven data source.
     // Streams can be created using Observables, which are a core part of RxJS, and they provide powerful operators to transform, filter, and combine data streams.
 
+
+    //what is rxjs ?
+    // RxJS is a library for reactive programming using Observables, making it easier to compose asynchronous or callback-based code.
+    // It provides a way to work with asynchronous data streams, allowing developers to handle events, HTTP requests, and other asynchronous operations in a more declarative and functional style.
+    // RxJS is often used in Angular applications to manage asynchronous data flows, such as handling user inputs, HTTP requests, and real-time data updates.
+    // RxJS is a powerful library that provides a wide range of operators for transforming, filtering, and combining streams of data.
+    // It is widely used in Angular applications to handle asynchronous operations, such as HTTP requests, user inputs, and real-time data updates.
+

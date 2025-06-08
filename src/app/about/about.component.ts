@@ -13,16 +13,14 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     document.addEventListener('click', evt => {
       console.log('click', evt);
+      setTimeout(() => {
+        console.log('setTimeout called');
+        let counter = 0;
+        setInterval(() => {
+          console.log('counter', counter);
+          counter++;
+        }, 1000);
+      }, 3000);
     })
-
-    let counter = 0;
-    setInterval(() => {
-      console.log('counter', counter);
-      counter++;
-    }, 1000);
-
-    setTimeout(() => {
-      console.log('setTimeout called');
-    }, 3000);
   }
 }
